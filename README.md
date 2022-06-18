@@ -12,10 +12,10 @@
 
 ## Instalando bot
 ```bash
-git clone https://github.com/kaualandi/wabot-atendimento.git
+git clone https://github.com/kaualandi/bot-whatsapp.git
 ```
 ```bash
-cd wabot-atendimento
+cd bot-whatsapp
 ```
 ```bash
 npm install
@@ -24,26 +24,25 @@ npm install
 ## Variáveis de ambiente
 Você precisará de um arquivo `.env` parecido com esse:
 ```env
-USING=DEVELOPMENT ENVIRONMENT VARIABLES
-MAINTENANCE_MODE=
-BASEURL_BOTINFORS=
+USING=PRODUCTION ENVIRONMENT VARIABLES
+MAINTENANCE_MODE=false
+BASEURL_BOTINFORS=http://localhost:3200
 
-BASEURL_SERVER=
-DB_NAME=
-DB_USER=
-DB_PASS=
-DB_HOST=
-INTERVAL_CHECK_PAY=
+TOKEN_CONSULTAS=
+BASE_URL_CONSULTAS=
+
+ffmpegPath=/usr/bin/ffmpeg
 ```
 Basta agora preencher os dados:
 - **USING:** é figurativo, apenas se mostrará qual variável está sendo usada, no caso de ter duas.
 - **MAINTENANCE_MODE:** é um flag que indica se o bot está em modo de manutenção, se `true` ele responderá avisando seu estado e não fará mais nada.
 - **BASEURL_BOTINFORS:** se você não alterar o script server do `package.json` será por padrão `http://localhost:3004`. É essencial para o funcionamento do bot.
+- **ffmpegPath:** Diretório do ffmpeg, para baixar músicas com o comando `!yt`. Caso não tenha, veja como baixar [aqui](https://www.ffmpeg.org/download.html).
 
 Os demais são dados do cliente, sendo assim não são necessários preencher.
 
 ## Server
-> Eu disse acima da *BASEURL_SERVER*, pois bem, aqui vamos configura-lo.
+> Eu disse acima da *BASEURL_BOTINFORS*, pois bem, aqui vamos configura-lo.
 
 ### Ambiente de Desenvolvimento
 
@@ -82,7 +81,7 @@ cd ..
 npm start
 ```
 
-Escaneie o QR Code como se estivesse conectando ao whatsapp web e mande um `Olá` para o número que usou para escanear.
+Escaneie o QR Code como se estivesse conectando ao whatsapp web e mande um `!menu` para o número que usou para escanear.
 
 > Não se esqueça de verificar se o multidevices (Multiplos Dispositivos) está ativado em seu whatsapp.
 
