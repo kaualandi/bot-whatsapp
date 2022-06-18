@@ -4,8 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "server": "json-server ./server/db.json --port 3004",
-    "server:w": "json-server --watch ./server/db.json --port 3004",
+    "server": "json-server ./server/db.json --port 3200",
+    "server:w": "json-server --watch ./server/db.json --port 3200",
     "start": "node app.js"
   },
   "keywords": [],
