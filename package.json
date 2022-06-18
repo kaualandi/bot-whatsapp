@@ -1,0 +1,24 @@
+{
+  "name": "bruce-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "server": "json-server ./server/db.json --port 3004",
+    "server:w": "json-server --watch ./server/db.json --port 3004",
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@open-wa/wa-automate": "^4.36.5",
+    "@open-wa/wa-decrypt": "^4.4.0",
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
+    "google-tts-api": "^2.0.2",
+    "nodemon": "^2.0.16",
+    "youtube-mp3-downloader": "^0.7.10",
+    "youtube-search": "^1.1.6"
+  }
+}
