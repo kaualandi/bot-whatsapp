@@ -11,3 +11,5 @@ node_modules
 # enviroment variables
 **.env**
 # end enviroment variables
+
+server/db.json

@@ -7,11 +7,11 @@ const bannedUsers = [
 	'5521976607557@c.us', // Albarran
 ];
 const silenceBannedUsers = [
-	'5511969472126@c.us', // PlayAnimes
 	'558893752311-1627929773@g.us', // Jersu
 	'555591441492-1588522560@g.us', // Code Monkey
 	// '553195360492-1623288522@g.us', // Grupo dos bots
 	'5511982465579-1568231201@g.us', // CanalTech Ofertas
+	'120363039230076121@g.us', // CT Ofertas
 	"120363041118699340@g.us", // Representantes CEEC
 	"5521973550700-1452525871@g.us", // Escolada Fé
 	"5528999939949-1426629849@g.us" // Demartini's
@@ -55,11 +55,11 @@ module.exports = msgHandler = async (client, message) => {
 
         console.log("---------------------------------------");
         console.log('DATE TIME	===>', new Date().toLocaleString('pt-br'));
-        isGroupMsg ? console.log("FROM 	===>", pushname, "IN", formattedTitle) : console.log("FROM 	===>", pushname);
-        console.log("FROM_ID 	===>", chat.id);
+        isGroupMsg ? console.log("FROM		===>", pushname, "IN", formattedTitle) : console.log("FROM		===>", pushname);
+        console.log("FROM_ID 		===>", chat.id);
         console.log("ARGUMENTS	===>", isMedia ? `[${mimetype}]` : args);
-        console.log("BODY	===>", isMedia ? `[${mimetype}]` : body);
-        console.log("COMMAND	===>", command);
+        console.log("BODY		===>", isMedia ? `[${mimetype}]` : body);
+        console.log("COMMAND		===>", command);
 
         if (isCommand && bannedUsers.includes(chat.id)) {
             console.log("\x1b[1;31mBANNED USER! IGNORING\x1b[0m");
