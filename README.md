@@ -44,7 +44,31 @@ Os demais são dados do cliente, sendo assim não são necessários preencher.
 ## Server
 > Eu disse acima da *BASEURL_BOTINFORS*, pois bem, aqui vamos configura-lo.
 
+```bash
+cd server
+```
+
+Precisamos de um arquivo para armazenar todas as informações
+
+```bash
+touch db.json
+```
+
+Agora abra esse arquivo em seu editor de textos e cole o objeto abaixo
+
+```json
+{
+  "authorizations": []
+}
+```
+
 ### Ambiente de Desenvolvimento
+
+Caso não tenha o [json-server](https://www.npmjs.com/package/json-server) globalmente, o instale.
+
+```bash
+npm install -g json-server
+```
 
 Se estiver no ambiente de desenvolvimento, é só rodar o `npm run server` ou `npm run server:w`, caso queira no modo watch.
 
@@ -55,6 +79,8 @@ Dessa forma, caso queria alterar a porta, você encontrará no arquivo `package.
 Acredito que você não queria que o server fique ocupando uma instância do terminal. Devemos então prepará-lo para o [PM2](https://pm2.keymetrics.io/).
 
 > Não ensinarei aqui como configurar o [PM2](https://pm2.keymetrics.io/). Mas se quiser, você pode ver o [guia](https://pm2.keymetrics.io/docs/usage/quick-start/) para isso.
+
+Se ainda não estiver, entre na pasta do servidor
 
 ```bash
 cd server
