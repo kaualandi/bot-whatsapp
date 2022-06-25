@@ -25,10 +25,11 @@ exports.avisartodos = async function avisartodos(client, message) {
     } else {
         if (args.length !== 1) {
             alertToSend = args.slice(1).join(" ");
-            return client.reply(from, 'Ainda não adivinho coisas... preciso saber a mensagem!', id);
         } else if (commands.split('\n').length !== 1) {
             const args = commands.split('\n');
             alertToSend = args.slice(1).join("\n");
+        } else {
+            return client.reply(from, 'Ainda não adivinho coisas... preciso saber a mensagem!', id);
         }
     }
 
