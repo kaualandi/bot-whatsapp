@@ -20,7 +20,6 @@ exports.avisartodos = async function avisartodos(client, message) {
     let alertToSend;
 
     if (quotedMsg) {
-        console.log(quotedMsgObj);
         alertToSend = quotedMsgObj.text;
     } else {
         if (args.length !== 1) {

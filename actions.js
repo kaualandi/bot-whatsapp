@@ -15,7 +15,6 @@ async function start(client, message) {
     try {
         await commands[commandText](client, message);
     } catch (error) {
-        console.log(error);
         console.log('UNKNOWN COMMAND:', commandText);
     }
 }
