@@ -24,6 +24,7 @@ const { promover } = require("./modules/promover");
 const { rebaixar } = require("./modules/rebaixar");
 const { apagar } = require("./modules/apagar");
 const { moeda } = require("./modules/moeda");
+const { avisartodos } = require("./modules/avisartodos");
 
 const commands = {}
 
@@ -54,5 +55,6 @@ commands.promover = (client, message) => promover(client, message);
 commands.rebaixar = (client, message) => rebaixar(client, message);
 commands.apagar = (client, message) => apagar(client, message);
 commands.moeda = (client, message) => moeda(client, message);
+commands.avisartodos = (client, message) => avisartodos(client, message);
 
 module.exports = commands;

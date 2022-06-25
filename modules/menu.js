@@ -20,7 +20,7 @@ exports.menu = async function menu(client, message) {
             break;
         case 'grupos':
         case 'grupo':
-            help = `*=== Comandos para grupos ===*\n→ !adminlista\n→ !donodogrupo\n→ !mencionartodos\n→ !ban @usuário\n→ !add 2199988....\n→ !sair (eu saio do grupo)\n→ !autorizarbot (permite que o bot funciona)\n→ !desautorizarbot (proíba que o bot funciona)\n→ !promover\n→ !rebaixar\n→ !linkdogrupo\n→ !kickme\n\n${showAll}`;
+            help = `*=== Comandos para grupos ===*\n→ !adminlista\n→ !donodogrupo\n→ !mencionartodos\n→ !avisartodos mensagem\n→ !ban @usuário\n→ !add 2199988....\n→ !sair (eu saio do grupo)\n→ !autorizarbot (permite que o bot funciona)\n→ !desautorizarbot (proíba que o bot funciona)\n→ !promover\n→ !rebaixar\n→ !linkdogrupo\n→ !kickme\n\n${showAll}`;
             break;
         case 'consultas':
         case 'consulta':
