@@ -2,15 +2,16 @@ const search = require("youtube-search");
 const YoutubeMp3Downloader = require("youtube-mp3-downloader");
 require("dotenv").config();
 const path = require("path");
+const fs = require("fs");
 
 exports.yt = async function yt(client, message) {
     const { id, from, body, sender, isGroupMsg, chat, caption, isMedia, mimetype, quotedMsg } = message;
 
+    const outputPath = path.resolve(__dirname, '../media/yt');
     try {
         const YD = new YoutubeMp3Downloader({
-            // "ffmpegPath": process.env.ffmpegPath,       // FFmpeg binary location
-            ffmpegPath: '/usr/bin/ffmpeg',       // FFmpeg binary location
-            outputPath: "./yt",                        // Output file location (default: the home directory)
+            ffmpegPath: process.env.ffmpegPath,       // FFmpeg binary location
+            outputPath: outputPath,                       // Output file location (default: the home directory)
             youtubeVideoQuality: "highestaudio",        // Desired video quality (default: highestaudio)
             queueParallelism: 3,                        // Download parallelism (default: 1)
             progressTimeout: 1000,                      // Interval in ms for the progress reports (default: 1000)
@@ -28,26 +29,34 @@ exports.yt = async function yt(client, message) {
         const pesq = args.slice(1).join(" ");
         search(pesq, opts, async function (err, results) {
             if (err) return console.log(err);
-
+            console.log("results", results);
             YD.download(results[0].id, `${results[0].id}.mp3`);
-            client.reply(message.from, "Estou procurando o vídeo", message.id);
-            client.reply(from, `Achei esse vídeo, já já te mando.\nTitulo: ${results[0].title}\nLink: ${results[0].link}\nCanal: ${results[0].channelTitle}`,id);
+            await client.reply(message.from, "Estou procurando o vídeo", message.id);
+            await client.reply(from, `Achei esse vídeo, já já te mando.\nTitulo: ${results[0].title}\nLink: ${results[0].link}\nCanal: ${results[0].channelTitle}`, id);
 
-            YD.on("finished", function (err, data) {
+            YD.on("finished", async function (err, data) {
                 console.log("Finished downloading: " + data);
-                client.sendFile(message.from, `./yt/${results[0].id}.mp3`, message.id);
-                console.log("SEDDING FILE");
+                const dist = path.resolve(__dirname, `../media/yt/${results[0].id}.mp3`)
+                await client.sendFile(message.from, dist, message.id);
+                console.log("SEND FILE");
+                try {
+                    fs.unlinkSync(dist);
+                    console.log("File removed:", dist);
+                } catch (err) {
+                    console.error("error in unlink", err);
+                }
             });
 
-            YD.on("error", function (error) {
-                client.reply(from, `Não consegui baixar sua música vei.\n${error}`, id);
+            YD.on("error", async function (error) {
+                console.log(error);
+                await client.reply(from, `Não consegui baixar sua música vei.\n${error}`, id);
             });
 
-            YD.on("progress", function (progress) {
-                client.reply(`Calma ai que eu já baixei: ${progress.progress.percentage.toFixed(2)}%\nFaltam apenas ${progress.progress.eta} segundos para terminar de baixar!!!`);
+            YD.on("progress", async function (progress) {
+                await client.reply(`Calma ai que eu já baixei ${progress.progress.percentage.toFixed(2)}%\nFaltam apenas ${progress.progress.eta} segundos.`);
             });
         });
     } catch (error) {
-        client.reply(from, `Deu merda, mostra isso para o Kauã:\n${error}`, id);
+        await client.reply(from, `Deu merda, mostra isso para o Kauã:\n${error}`, id);
     }
 }

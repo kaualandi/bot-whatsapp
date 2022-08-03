@@ -30,7 +30,7 @@ const commands = {}
 
 commands.autorizarbot = (client, message) => autorizarbot(client, message);
 commands.desautorizarbot = (client, message) => desautorizarbot(client, message);
-// commands.yt = (client, message) => yt(client, message);
+commands.yt = (client, message) => yt(client, message);
 commands.cpf = (client, message) => cpf(client, message);
 commands.nome = (client, message) => nome(client, message);
 commands.telefone = (client, message) => telefone(client, message);
