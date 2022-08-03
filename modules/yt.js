@@ -23,7 +23,7 @@ exports.yt = async function yt(client, message) {
 
         var opts = {
             maxResults: 1,
-            key: "AIzaSyARsUt7mpnrM__x-uA95qkKAArXop6j2Bo",
+            key: "AIzaSyAkOcHe3MCzmdMMPWx_ArbsesltVvJwac4",
         };
 
         const pesq = args.slice(1).join(" ");
