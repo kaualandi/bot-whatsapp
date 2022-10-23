@@ -1,0 +1,13 @@
+# node
+node_modules
+# end node
+
+# managed by open-wa
+**.data.json
+**.node-persist**
+**_IGNORE_**
+# end managed by open-wa
+
+# enviroment variables
+# **.env**
+# end enviroment variables
