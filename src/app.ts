@@ -6,7 +6,7 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 app.use(express.json());
-const port = process.env.PORT || 3333;
+const port = process.env.PORT || 80;
 
 const start = async (client: Client) => {
   console.log("\x1b[1;32m✓ USING:", process.env.USING, "\x1b[0m");
