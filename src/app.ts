@@ -31,7 +31,7 @@ const start = async (client: Client) => {
   });
 
   app.post("/send-text", async (req: Request, res: Response) => {
-    const { message, number } = req.body;
+    const { message, number, image } = req.body;
     if (!message || !number) {
       res.status(400).json({
         worked: false,
@@ -44,9 +44,15 @@ const start = async (client: Client) => {
       return;
     }
 
-    const sended = await client.sendText(`${number}@c.us`, message);
+    let sended;
 
-    if ((sended as string).includes("ERROR")) {
+    if (image) {
+      sended = await client.sendImage(`${number}@c.us`, image, "image", message);
+    } else {
+      sended = await client.sendText(`${number}@c.us`, message);
+    }
+
+    if (sended.toString().includes("ERROR")) {
       console.log(`Erro ao enviar mensagem para ${number}!`);
       res.status(500).json({
         worked: false,
