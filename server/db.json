@@ -1,0 +1,205 @@
+{
+  "clients": [
+    {
+      "name": "Isabelle Izidório",
+      "credits": 1234567,
+      "phone": "5521968310211@c.us",
+      "id": 1
+    },
+    {
+      "name": "Érica Inês",
+      "credits": 1234567,
+      "phone": "5522998969821@c.us",
+      "id": 2
+    },
+    {
+      "name": "Linézio",
+      "credits": 1234567,
+      "phone": "5521995660600@c.us",
+      "id": 3
+    },
+    {
+      "name": "Jean Carlo Nacimento",
+      "credits": 53,
+      "phone": "5515991957645@c.us",
+      "id": 4
+    },
+    {
+      "name": "Murilo",
+      "credits": 1,
+      "phone": "5511959848557@c.us",
+      "id": 5
+    },
+    {
+      "name": "Bruno Muniz",
+      "credits": 1,
+      "phone": "556784331513@c.us",
+      "id": 6
+    },
+    {
+      "name": "Daniel",
+      "credits": 0,
+      "phone": "5511977513314@c.us",
+      "id": 7
+    },
+    {
+      "name": "Tramontaaaa",
+      "credits": 3,
+      "phone": "5511947952409@c.us",
+      "id": 8
+    },
+    {
+      "name": "Gabriel Martins",
+      "credits": 0,
+      "phone": "5513981042609@c.us",
+      "id": 9
+    },
+    {
+      "name": "Kauã Landi",
+      "credits": 985,
+      "phone": "5521999222644@c.us",
+      "id": 10
+    },
+    {
+      "name": "DuuH",
+      "credits": 13,
+      "phone": "5514997040810@c.us",
+      "id": 11
+    },
+    {
+      "credits": 100,
+      "phone": "5527988999019@c.us",
+      "id": 12
+    }
+  ],
+  "authorizations": [
+    {
+      "id": "120363042609883193@g.us",
+      "authorization": true
+    },
+    {
+      "id": "120363024343154080@g.us",
+      "authorization": true
+    },
+    {
+      "id": "120363026703972550@g.us",
+      "authorization": true
+    },
+    {
+      "id": "120363042908821271@g.us",
+      "authorization": true
+    },
+    {
+      "id": "120363021741032021@g.us",
+      "authorization": true
+    },
+    {
+      "id": "558189871407-1494080841@g.us",
+      "authorization": true
+    },
+    {
+      "id": "120363041699341129@g.us",
+      "authorization": true
+    },
+    {
+      "id": "120363042323288649@g.us",
+      "authorization": true
+    },
+    {
+      "id": "5527988649670-1617738116@g.us",
+      "authorization": true
+    },
+    {
+      "id": "120363044115335248@g.us",
+      "authorization": true
+    },
+    {
+      "id": "120363024984862586@g.us",
+      "authorization": true
+    },
+    {
+      "id": "120363027305622283@g.us",
+      "authorization": true
+    },
+    {
+      "id": "120363022993396817@g.us",
+      "authorization": true
+    },
+    {
+      "id": "120363043103724782@g.us",
+      "authorization": true
+    },
+    {
+      "id": "5511976642112-1606523448@g.us",
+      "authorization": true
+    },
+    {
+      "id": "120363028045159185@g.us",
+      "authorization": true
+    },
+    {
+      "id": "120363042337726509@g.us",
+      "authorization": true
+    },
+    {
+      "id": "120363026497708541@g.us",
+      "authorization": true
+    },
+    {
+      "id": "120363044861738726@g.us",
+      "authorization": true
+    },
+    {
+      "id": "120363043139799406@g.us",
+      "authorization": true
+    },
+    {
+      "id": "5521987316882-1622418156@g.us",
+      "authorization": true
+    },
+    {
+      "id": "120363043356993226@g.us",
+      "authorization": true
+    },
+    {
+      "id": "120363039183829378@g.us",
+      "authorization": true
+    },
+    {
+      "id": "120363044433650866@g.us",
+      "authorization": true
+    },
+    {
+      "id": "120363038940495030@g.us",
+      "authorization": true
+    },
+    {
+      "id": "120363025996226293@g.us",
+      "authorization": true
+    },
+    {
+      "id": "120363045344859287@g.us",
+      "authorization": true
+    },
+    {
+      "id": "120363025641929011@g.us",
+      "authorization": true
+    },
+    {
+      "id": "120363042582082403@g.us",
+      "authorization": true
+    },
+    {
+      "id": "120363042507707020@g.us",
+      "authorization": true
+    },
+    {
+      "id": "559984920465-1600081389@g.us",
+      "authorization": true
+    },
+    {
+      "id": "120363046240963541@g.us",
+      "authorization": true
+    }
+  ]
+}
