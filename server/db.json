@@ -225,5 +225,15 @@
       "id": "120363020635766820@g.us",
       "authorization": true
     }
+  ],
+  "infors": [
+    {
+      "id": "120363049085344157@g.us",
+      "text": "Bem vindo."
+    },
+    {
+      "id": "120363046240963541@g.us",
+      "text": "Hello World"
+    }
   ]
 }

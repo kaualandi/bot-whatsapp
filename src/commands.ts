@@ -23,6 +23,8 @@ import sticker from "./modules/sticker"
 import textToSpeech from "./modules/textToSpeech"
 import warnEveryone from "./modules/warnEveryone"
 import ytDownload from "./modules/ytDownload"
+import getInfo from "./modules/getInfo"
+import setInfo from "./modules/setInfo"
 
 const commands: Commands = {
   // add: addUserInGroup,
@@ -55,7 +57,9 @@ const commands: Commands = {
   fig: sticker,
   sair: leave,
   tts: textToSpeech,
-  yt: ytDownload
+  yt: ytDownload,
+  info: getInfo,
+  setinfo: setInfo
 }
 
 interface Commands {

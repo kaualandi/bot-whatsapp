@@ -7,7 +7,6 @@ import {
 require("dotenv").config();
 const BASEURL_BOTINFORS = process.env.BASEURL_BOTINFORS;
 
-
 export async function authorization(
   id: ContactId | GroupChatId
 ): Promise<boolean> {
@@ -24,8 +23,6 @@ export async function authorization(
 export async function checkAuthorization(
   id: ContactId | GroupChatId
 ): Promise<AuthorizationResponse> {
-  console.log(BASEURL_BOTINFORS);
-  
   return axios
     .get<Authorization>(`${BASEURL_BOTINFORS}/authorizations/${id}`)
     .then((res) => {
