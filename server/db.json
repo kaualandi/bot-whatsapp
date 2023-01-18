@@ -14,7 +14,7 @@
     },
     {
       "name": "Linézio",
-      "credits": 1234567,
+      "credits": 9999,
       "phone": "5521995660600@c.us",
       "id": 3
     },
@@ -56,18 +56,18 @@
     },
     {
       "name": "Kauã Landi",
-      "credits": 985,
+      "credits": 962,
       "phone": "5521999222644@c.us",
       "id": 10
     },
     {
       "name": "DuuH",
-      "credits": 5,
+      "credits": 12,
       "phone": "5514997040810@c.us",
       "id": 11
     },
     {
-      "credits": 100,
+      "credits": 82,
       "phone": "5527988999019@c.us",
       "id": 12
     }
@@ -199,6 +199,30 @@
     },
     {
       "id": "120363046240963541@g.us",
+      "authorization": true
+    },
+    {
+      "id": "120363039623359159@g.us",
+      "authorization": true
+    },
+    {
+      "id": "120363047552379822@g.us",
+      "authorization": true
+    },
+    {
+      "id": "5511930036740-1596742750@g.us",
+      "authorization": true
+    },
+    {
+      "id": "557581908459-1590256205@g.us",
+      "authorization": true
+    },
+    {
+      "id": "120363043976994183@g.us",
+      "authorization": true
+    },
+    {
+      "id": "120363020635766820@g.us",
       "authorization": true
     }
   ]
