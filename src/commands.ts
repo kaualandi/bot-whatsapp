@@ -52,7 +52,7 @@ const commands: Commands = {
   promover: promoteToAdmin,
   rebaixar: lowerToUser,
   s: sticker,
-  t: sticker,
+  f: sticker,
   sticker: sticker,
   fig: sticker,
   sair: leave,
