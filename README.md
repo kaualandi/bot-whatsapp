@@ -8,7 +8,7 @@
 
 </p>
 
-> Olá, esse bot de whatsapp foi criado com foco em atendimento ao cliente.
+> Esse bot de whatsapp foi criado para respostas a comandos, caso queira um para atendimento ao cliente (com fluxo de conversa), veja o [repo](https://github.com/kaualandi/bot-whatsapp-flow/).
 
 ## Instalando bot
 ```bash
