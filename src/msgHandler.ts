@@ -15,6 +15,8 @@ const silenceBannedUsers = [
   "5528999939949-1426629849@g.us", // Demartini's
   "120363042544006292@g.us", // Grupo Dev & Coffee
   "5521992918321-1503353039@g.us", // JAIM
+  "120363065908858094@g.us", // Code Monkey 2
+  "557581908459-1590256205@g.us", // DEV e HACK
 ];
 
 const isMaintenanceMode = process.env.MAINTENANCE_MODE === "true";
