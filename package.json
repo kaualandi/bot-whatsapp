@@ -12,7 +12,7 @@
   "author": "Kauã Landi <kaualandi@hotmail.com>",
   "license": "Apache-2.0",
   "dependencies": {
-    "@open-wa/wa-automate": "^4.42.5",
+    "@open-wa/wa-automate": "^4.68.0",
     "@open-wa/wa-decrypt": "^4.4.0",
     "axios": "^0.27.2",
     "dotenv": "^16.0.1",
